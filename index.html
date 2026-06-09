@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 5px;
+        background-color: #0f172a;
+        color: white;
+      }
+      h1 {
+        color: #60a5fa;
+        text-align: center;
+        margin: 5px;
+      }
+      .card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        gap: 10px;
+        color: white;
+        justify-content: center;
+      }
+      .content {
+        padding: 15px;
+      }
+      .card {
+        background-color: #1e293b;
+        border: 1px solid wheat;
+
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        color: white;
+        overflow: hidden;
+        transition: transform 0.2s ease;
+      }
+      button {
+        margin: 15px;
+        padding: 10px;
+
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition:
+          background-color 0.3s ease-in,
+          color 0.3s ease-in;
+        background-color: rgb(7, 143, 227);
+      }
+      /* @media screen and (max-width:1200px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3,300px); ;
+                gap: 10px;
+                width: 90%;
+                margin: auto;
+            }
+            
+         }
+
+         @media screen and (max-width:900px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(1,400px);
+                gap: 10px;
+                width: 90%;
+                margin: auto;
+                
+            }
+            
+         }
+
+         @media screen and (max-width:500px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2,150px);
+                justify-content: center;
+                gap: 10px;
+                width: 90%;
+                margin: auto;
+            }
+            
+         }*/
+
+      .card:hover {
+        cursor: pointer;
+        /*transform: scale(1.03);*/
+        transform: translateY(-8px);
+      }
+
+      button:hover {
+        background-color: blue;
+        color: white;
+      }
+
+      .hero{
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      .hero > p{
+        color: #cbd5e1;
+        margin-top: 7px;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <header class="hero">
+        <h1>Full Stack Development Roadmap</h1>
+        <p>Explore the technologies required to become a modern Full Stack Developer.</p>
+    </header>
+    
+    
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>HTML</h3>
+          <p>
+            HTML is the foundation of every website. It provides the structure
+            and content of web pages.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>CSS</h3>
+          <p>
+            CSS is used to style web pages, create layouts, animations, and
+            responsive designs.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>JavaScript</h3>
+          <p>
+            JavaScript makes websites interactive through dynamic content,
+            events, and DOM manipulation.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>React</h3>
+          <p>
+            React is a popular JavaScript library used to build fast and
+            reusable user interfaces.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>Node.js</h3>
+          <p>
+            Node.js enables JavaScript to run on servers and helps build
+            scalable backend applications.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>Express.js</h3>
+          <p>
+            Express.js simplifies backend development by providing routing and
+            middleware support.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>MongoDB</h3>
+          <p>
+            MongoDB is a NoSQL database used to store application data in
+            flexible JSON-like documents.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>Git & GitHub</h3>
+          <p>
+            Git helps track code changes while GitHub enables collaboration and
+            project hosting.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>REST APIs</h3>
+          <p>
+            REST APIs allow communication between frontend and backend
+            applications through HTTP requests.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+          alt=""
+        />
+        <div class="content">
+          <h3>Deployment</h3>
+          <p>
+            Deployment involves hosting applications online using platforms like
+            Vercel, Netlify, and Render.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
